@@ -17,14 +17,14 @@
 }
 
 .big-menu-sidebar {
-    padding-top: 30px;
+    padding-top: 32px;
     border-right: 1px solid rgba(61, 61, 78, 0.2);
 }
 
 .big-menu-sidebar__blocks {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 16px;
     font-family: 'Open Sans',sans-serif;
 }
 .big-menu-sidebar__blocks:first-child {
@@ -65,12 +65,19 @@
 
 
 .big-menu-price {
-    margin-bottom: 32px;
+    margin-bottom: 48px;
 }
 
 .big-menu-price__filter {
     display: flex;
     align-items: center;
+}
+
+.big-menu-price__title {
+    font-weight: 600;
+    color: #2C2C38;
+    padding-bottom: 20px;
+    margin: 0;
 }
 
 .big-menu-price__label {
