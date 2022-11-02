@@ -1,6 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
 .big-menu {
     margin: 0 auto;
-    height: 586px;
     max-width: 1216px;
     border: 1px solid #eee;
     border-radius: 10px;
@@ -13,34 +16,45 @@
 }
 
 .big-menu__content {
-    display: grid;
-    grid-template-rows: 76px 1fr;
-    row-gap: 32px;
     padding: 47px;
 }
 
 .big-menu__sections {
-    max-width: 952px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
     justify-content: space-between;
+    align-items: flex-start;
 }
 
-.big-menu__properties {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 420px;
+.big-menu-sub {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    grid-gap: 48px;
 }
 
-.big-menu__list {
+.big-menu-sub_two {
+    grid-template-columns: repeat(2, max-content);
+}
+
+.big-menu-sub_four {
+    grid-template-columns: repeat(4, max-content);
+}
+
+.big-menu-sub_five {
+    grid-template-columns: repeat(5, max-content);
+}
+
+.big-menu-sub__items {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
 
-.big-menu-title__col {
+.big-menu-sub__title {
     font-weight: 500;
     padding-bottom: 20px;
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 .big-menu-brends__title {
@@ -50,32 +64,42 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.big-menu__col {
-    width: 140px;
+.big-menu-sub__item {
     padding-bottom: 10px;
     font-family: 'Roboto', sans-serif;
 }
 
 .big-menu-brends {
-    max-width: 344px;
+
 }
 
 .big-menu-brends__items {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
     justify-content: space-between;
-    margin: 0;
     padding: 0;
+    margin: 0;
     list-style-type: none;
+}
+
+.big-menu-brends__items_four {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.big-menu-brends__items_five {
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .big-menu-brends__item {
     border: 1px solid #eee;
     padding: 10px;
-    margin: 0 0 16px 0;
+    width: 104px;
+    height: 104px;
 }
 
 .big-menu-brends__img {
     width: 100%;
-    
+    vertical-align: middle;
 }
