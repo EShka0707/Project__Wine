@@ -5,19 +5,95 @@
 .big-menu {
     margin: 0 auto;
     max-width: 1216px;
-    border: 1px solid #eee;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 0px 0px 3px rgba(61, 61, 78, 0.2);
     border-radius: 10px;
     display: grid;
     grid-template-columns: 280px 1fr;
 }
 
-.big-menu__sidebar {
-    border-right: 1px solid #eee;
-}
-
 .big-menu__content {
     padding: 47px;
 }
+
+.big-menu-sidebar {
+    padding-top: 30px;
+    border-right: 1px solid rgba(61, 61, 78, 0.2);
+}
+
+.big-menu-sidebar__blocks {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Open Sans',sans-serif;
+}
+.big-menu-sidebar__blocks:first-child {
+    padding-top: 0;
+}
+
+.big-menu-sidebar__block {
+    margin-left: 10px;
+}
+
+.big-menu-sidebar__title {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2C2C38;
+}
+
+.big-menu-sidebar__subtitle {
+    
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #707090;
+}
+
+.big-menu-sidebar__title,
+.big-menu-sidebar__subtitle {
+    margin: 0;
+}
+
+.big-menu-sidebar__title-discount {
+    color: #C8003C;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+.big-menu-price {
+    margin-bottom: 32px;
+}
+
+.big-menu-price__filter {
+    display: flex;
+    align-items: center;
+}
+
+.big-menu-price__label {
+    color: #707090;
+}
+
+.big-menu-price__input {
+    width: 147px;
+    border: none;
+    border-radius: 32px;
+    background: #F5F5F7;
+    padding: 10px 20px;
+    margin-right: 16px;
+    text-align: center;
+}
+.big-menu-price__input:first-child,
+.big-menu-price__input:last-child {
+    width: 110px;
+}
+.big-menu-price__input:last-child {
+    margin-right: 0;
+}
+
 
 .big-menu__sections {
     display: grid;
@@ -51,26 +127,22 @@
 }
 
 .big-menu-sub__title {
-    font-weight: 500;
+    font-weight: 600;
+    color: #2C2C38;
     padding-bottom: 20px;
-    font-family: 'Roboto', sans-serif;
     margin: 0;
 }
 
 .big-menu-brends__title {
+    font-weight: 600;
+    color: #2C2C38;
     margin: 0;
     padding-bottom: 20px;
-    font-weight: 500;
-    font-family: 'Roboto', sans-serif;
 }
 
 .big-menu-sub__item {
+    color: #707090;
     padding-bottom: 10px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.big-menu-brends {
-
 }
 
 .big-menu-brends__items {
@@ -102,4 +174,4 @@
 .big-menu-brends__img {
     width: 100%;
     vertical-align: middle;
-}
+} 
