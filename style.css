@@ -34,6 +34,7 @@ li {
     font-weight: 600;
     margin: 0;
 	line-height: 24px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
 .big-menu-sidebar-discount__text:hover {
    border-bottom: 2px solid #C8003C;
