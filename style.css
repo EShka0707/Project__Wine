@@ -19,7 +19,7 @@ li {
     border-radius: 10px 0 0 10px;
 }
 
-.big-menu-sidebar-discount {
+.big-menu-discount {
     text-decoration: none;
     display: grid;
     align-items: center;
@@ -28,7 +28,7 @@ li {
     grid-template-columns: repeat(2, max-content);
 }
 
-.big-menu-sidebar-discount__text { 
+.big-menu-discount__text { 
     color: #C8003C;
     font-size: 16px;
     font-weight: 600;
@@ -36,11 +36,11 @@ li {
 	line-height: 24px;
     border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
-.big-menu-sidebar-discount__text:hover {
+.big-menu-discount__text:hover {
    border-bottom: 2px solid #C8003C;
 }
 
-.big-menu-sidebar-discount__image,
+.big-menu-discount__image,
 .big-menu-sidebar__image {
     max-width: 100%;
     object-fit: contain;
