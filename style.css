@@ -10,22 +10,19 @@ li {
 .big-menu {
     margin: 0 auto;
     max-width: 1216px;
-    box-shadow: 0px 0px 3px rgba(61, 61, 78, 0.2);
-    border-radius: 10px;
     display: grid;
     grid-template-columns: 280px 1fr;
 }
 
 .big-menu-sidebar {
-    display: grid;
-    grid-template-rows: repeat(7, max-content);
-    border-right: 1px solid rgba(61, 61, 78, 0.2);
+    box-shadow: 0px 0px 3px rgba(61, 61, 78, 0.2);
+    border-radius: 10px 0 0 10px;
 }
 
 .big-menu-sidebar__discount {
     display: grid;
     align-items: center;
-    padding: 32px 0 0 25px;
+    padding: 32px 0 0 17px;
     column-gap: 10px;
     grid-template-columns: repeat(2, max-content);
 }
@@ -52,16 +49,19 @@ li {
 .big-menu-sidebar__blocks-wrap {
     margin-top: 20px;
 }
+.big-menu-sidebar__items {
+    padding: 0;
+}
 
-.big-menu-sidebar__blocks {
-    padding: 18px 0 18px 25px;
+.big-menu-sidebar__item {
+    padding: 18px;
     display: grid;
     align-items: center;
     column-gap: 10px;
     grid-template-columns: repeat(2, max-content);
 }
 
-.big-menu-sidebar__blocks:hover {
+.big-menu-sidebar__item:hover {
     background: #F8F8FA;
 }
 
@@ -88,7 +88,9 @@ li {
 }
 
 .big-menu__content {
-    padding: 47px 48px 37px 35px;
+    padding: 47px 32px 35px;
+    border-radius: 0 10px 10px 10px;
+    box-shadow: 0px 0px 3px rgba(61, 61, 78, 0.2);
 }
 
 .big-menu-price {
@@ -103,12 +105,13 @@ li {
 }
 
 .big-menu-price__btn {
+    text-decoration: none;
+    font-size: 14px;
     border: none;
-    cursor: pointer;
     border-radius: 32px;
     background: #F5F5F7;
     color: #707090;
-    padding: 10px 20px;
+    padding: 8px 20px;
     margin-right: 16px;
     text-align: center;
 }
@@ -161,6 +164,8 @@ li {
 }
 
 .big-menu-sub__title {
+    font-size: 16px;
+    line-height: 24px;
     font-weight: 600;
     color: #2C2C38;
     padding-bottom: 20px;
@@ -204,3 +209,42 @@ li {
     width: 100%;
     vertical-align: middle;
 } 
+
+@media (min-width: 1440px) {
+    .big-menu__content {
+        border-radius: 0 10px 10px 0;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .big-menu {
+        max-width: 992px;
+    }
+
+    .big-menu-price {
+        margin-bottom: 32px;
+    }
+    .big-menu-price__filter {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .big-menu-price__btn {
+
+        margin-right: 8px;
+    }
+    
+    .big-menu-sub {
+        grid-template-columns: repeat(2, max-content);
+    }
+    .big-menu-brends__items {
+        grid-template-columns: repeat(2, max-content);
+    }
+}
+
+/* @media (max-width: 800px) {
+    .big-menu-sidebar__row {
+        display: none;
+    }
+    
+} */
