@@ -222,41 +222,32 @@ li {
     vertical-align: middle;
 } 
 
-@media (min-width: 1440px) {
-    .big-menu__content {
-        border-radius: 0 10px 10px 0;
+@media (min-width: 1024px) and (max-width: 1140px) {
+    .big-menu-sub {
+        column-gap: 40px;
     }
 }
 
 @media (max-width: 1024px) {
 
-    .big-menu {
-        max-width: 992px;
-    }
-
-    .big-menu-price {
-        margin-bottom: 32px;
-    }
-    .big-menu-price__filter {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .big-menu-price__btn {
-
-        margin-right: 8px;
+    .big-menu__sections {
+        grid-template-columns: repeat(1, max-content);
+       
     }
     
     .big-menu-sub {
-        grid-template-columns: repeat(2, max-content);
+        column-gap: 100px;
+    }
+
+    .big-menu-brends {
+        margin-top: 40px;
     }
     .big-menu-brends__items {
-        grid-template-columns: repeat(2, max-content);
+        grid-template-columns: repeat(5, max-content);
     }
-}
 
-/* @media (max-width: 800px) {
-    .big-menu-sidebar__row {
+    .big-menu-price__item:last-child {
         display: none;
     }
     
-} */
+}
